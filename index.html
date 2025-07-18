@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Form - All Elements</title>
+</head>
+<body>
+
+    <h2>Experiment 2 HTML Form - URK23CS1105</h2>
+
+    <form action="/submit" method="post">
+
+        <!-- Label + Text Input -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        <br><br>
+
+        <!-- Password Input -->
+        <label for="pwd">Password:</label>
+        <input type="password" id="pwd" name="pwd" placeholder="Enter password" required>
+        <br><br>
+
+        <!-- Email Input -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="example@email.com">
+        <br><br>
+
+        <!-- Number Input -->
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="1" max="120" value="18">
+        <br><br>
+
+        <!-- Radio Buttons -->
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <br><br>
+
+        <!-- Date Input -->
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob">
+        <br><br>
+
+        <!-- File Input -->
+        <label for="file">Upload File:</label>
+        <input type="file" id="file" name="file">
+        <br><br>
+
+        <!-- Readonly Input -->
+        <label for="readonly">Readonly Field:</label>
+        <input type="text" id="readonly" name="readonly" value="You cannot edit this" readonly>
+        <br><br>
+
+        <!-- Textarea -->
+        <label for="msg">Message:</label><br>
+        <textarea id="msg" name="msg" rows="4" cols="40" placeholder="Enter your message here..."></textarea>
+        <br><br>
+
+        <!-- Select Dropdown -->
+        <label for="country">Country:</label>
+        <select id="country" name="country" required>
+            <option value="">--Select--</option>
+            <option value="in">India</option>
+            <option value="us">USA</option>
+            <option value="uk">UK</option>
+        </select>
+        <br><br>
+
+        <!-- Buttons -->
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+        <button type="button" onclick="alert('This is a button!')">Click Me</button>
+
+    </form>
+
+</body>
+</html>
